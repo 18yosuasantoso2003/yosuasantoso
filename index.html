@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YS Music Store - Produk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="brand">
+        <a href="index.html"><h1>YS Music Store</h1></a>
+        <p class="tag">Alat musik berkualitas — untuk pemula & profesional</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Produk</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="invoice.html">Invoice</a>
+        <a href="kontak.html">Kontak Kami</a>
+        <a href="tentang.html">Tentang</a>
+      </nav>
+    </div>
+
+    <div class="marquee-wrap">
+      <marquee behavior="scroll" direction="left">
+        Diskon Musim Ini: Diskon 10% untuk gitar akustik & free tuning — Cek produk unggulan kami!
+      </marquee>
+    </div>
+  </header>
+
+  <main class="container page-grid">
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li>Gitar</li>
+        <li>Keyboard</li>
+        <li>Drum</li>
+      
+      </ul>
+
+   
+    </aside>
+
+    <section class="content">
+      <h2>Produk Unggulan</h2>
+      <div class="products-grid" id="products">
+        <article class="product-card">
+          <img src="gitar.jpg" alt="Gitar Akustik" />
+          <h3>Gitar Akustik Model A</h3>
+          <p>Suara hangat, cocok untuk pemula hingga profesional.</p>
+          <p class="price">Rp 1.200.000</p>
+          <button class="btn-buy" data-id="gitarA" data-name="Gitar Akustik Model A" data-price="1200000" data-img="gitar.jpg">Beli / Pesan</button>
+        </article>
+
+        <article class="product-card">
+          <img src="keyboard.jpg" alt="Keyboard" />
+          <h3>Keyboard 61 Keys</h3>
+          <p>Mendukung MIDI, cocok untuk belajar dan pertunjukan kecil.</p>
+          <p class="price">Rp 2.000.000</p>
+          <button class="btn-buy" data-id="keyboard61" data-name="Keyboard 61 Keys" data-price="2000000" data-img="keyboard.jpg">Beli / Pesan</button>
+        </article>
+
+        <article class="product-card">
+          <img src="drum.jpg" alt="Drum Set" />
+          <h3>Drum Set Entry</h3>
+          <p>Set drum lengkap untuk band pemula.</p>
+          <p class="price">Rp 3.500.000</p>
+          <button class="btn-buy" data-id="drum1" data-name="Drum Set Entry" data-price="3500000" data-img="drum.jpg">Beli / Pesan</button>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar right">
+      <h3>Keranjang Singkat</h3>
+      <div id="mini-cart">
+        <p>Tidak ada item.</p>
+      </div>
+      <h3>Kontak Cepat</h3>
+      <p>WA: 0822-2222-2222</p>
+      <p>Email: ysmusic@gmail.com</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <small>&copy; <span id="year"></span> YS Music Store</small>
+      <div>
+        <a href="#">Syarat & Ketentuan</a> | <a href="#">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
