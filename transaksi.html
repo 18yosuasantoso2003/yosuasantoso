@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transaksi - YS Music Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="brand"><a href="index.html"><h1>YS Music Store</h1></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Produk</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="invoice.html">Invoice</a>
+        <a href="kontak.html">Kontak Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="form-wrap">
+      <h2>Input Transaksi / Reservasi</h2>
+
+      <div id="selected-product" class="product-summary">
+        <!-- terisi via JS -->
+      </div>
+
+      <form id="transaksi-form">
+        <fieldset>
+          <legend>Informasi Pembeli</legend>
+          <label>Nama Lengkap
+            <input type="text" id="nama" required />
+          </label>
+          <label>Email
+            <input type="email" id="email" required />
+          </label>
+          <label>No. Telepon
+            <input type="tel" id="tel" required />
+          </label>
+          <label>Alamat Pengiriman
+            <textarea id="alamat" rows="3" required></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detail Pesanan</legend>
+          <label>Jumlah
+            <input type="number" id="qty" min="1" value="1" required />
+          </label>
+          <label>Metode Pembayaran
+            <select id="metode" required>
+              <option value="transfer">Transfer Bank</option>
+              <option value="cod">COD</option>
+              <option value="e-wallet">E-Wallet</option>
+            </select>
+          </label>
+          <p>Subtotal: <strong id="subtotal">Rp 0</strong></p>
+          <p>Ongkos kirim (estimasi): <strong id="shipping">Rp 30.000</strong></p>
+          <p>Total: <strong id="total">Rp 0</strong></p>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="button" id="btn-back" class="btn-secondary">Kembali ke Produk</button>
+          <button type="submit" class="btn-primary">Checkout / Buat Pesanan</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <small>&copy; <span id="year2"></span> YS Music Store</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

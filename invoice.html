@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invoice - YS Music Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="brand"><a href="index.html"><h1>YS Music Store</h1></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Produk</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="invoice.html">Invoice</a>
+        <a href="kontak.html">Kontak Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="invoice-wrap" id="invoice-wrap">
+      <!-- Isi invoice diisi oleh JS -->
+    </section>
+
+    <div class="invoice-actions">
+      <button id="btn-print" class="btn-primary">Cetak / Print</button>
+      <button id="btn-download" class="btn-secondary">Download JSON</button>
+      <a href="index.html" class="btn-link">Kembali ke Produk</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <small>&copy; <span id="year3"></span> YS Music Store</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
